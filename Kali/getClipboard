@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd $(dirname $([ -L $0 ] && readlink -f $0 || echo $0))
+
+if [ -f ".tmp/tmp-clip-host" ]; then
+	cat .tmp/tmp-clip-host | tr -d '\r' | xclip -selection clip -rmlastnl
+	rm .tmp/tmp-clip-host
+else
+	echo "Nothing has been sent by the Host"
+fi

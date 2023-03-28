@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd $(dirname $([ -L $0 ] && readlink -f $0 || echo $0))
+
+xclip -selection clip -o > .tmp/tmp-clip-kali
+
+chmod 777 .tmp/tmp-clip-kali
+
+echo "Clipboard sent to the Host."
