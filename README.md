@@ -1,6 +1,20 @@
 # Kali Clipboard
 Transfer the clipboard between your Windows machine and your Kali machine with Hyper-V using SSH
 
+# Table of contents
+- [Requirements](#requirements)
+- [Installation of the requirements](#installation-of-the-requirements)
+  - [Hyper-V](#hyper-v)
+  - [The `ssh` and `scp` commands on Windows](#the-ssh-and-scp-commands-on-windows)
+  - [The `xclip` command on Kali](#the-xclip-command-on-kali)
+- [Setup](#setup)
+  - [Scripts configuration](#scripts-configuration)
+  - [Windows](#windows)
+  - [Kali](#kali)
+- [Usage](#usage)
+  - [Windows --\> Kali](#windows----kali)
+  - [Kali --\> Windows](#kali----windows)
+
 # Requirements
 - Kali running on Hyper-V
 - `ssh` and `scp` commands installed on Windows
